@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f9f5df">
+  <meta name="description" content="8 道生活小题，领取你的周末人格卡。每一种周末，都有自己的舒服。">
+  <title>周末人格图鉴 · 找到你的充电方式</title>
+  <link rel="icon" href="./assets/brand.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./data.js"></script>
+  <script defer src="./platform.js"></script>
+  <script defer src="./poster.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div id="app" aria-busy="true">
+    <main class="static-intro">
+      <p class="static-brand">周末人格图鉴</p>
+      <h1>周末你是哪一种人？</h1>
+      <p>8 道生活小题，找到你的充电方式。<br>领取一张，有点懂你的周末人格卡。</p>
+      <p id="boot-status" role="status">正在准备你的周末…</p>
+      <button id="boot-retry" class="primary" data-action="retry-boot" disabled>正在准备</button>
+      <p class="static-note">趣味生活偏好测试 · 结果会随状态变化</p>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript>请启用 JavaScript，开启你的周末人格测试。</noscript>
+</body>
+</html>
